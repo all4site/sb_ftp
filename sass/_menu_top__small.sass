@@ -1,0 +1,66 @@
+#menu_top_small
+	grid-auto-flow: column
+	align-items: center
+	background: $white
+	display: none
+	z-index: 99999
+
+.menu_top_small__dropdown
+	display: none
+	padding: 30px 0 0
+
+.menu_top_small__links
+	a
+		width: 100%
+		border-bottom: 1px solid lighten($black, 80%)
+		padding: 10px 0
+
+		&:first-child
+			border-top: 1px solid lighten($black, 80%)
+
+		&:last-child
+			border-bottom: none
+			padding-bottom: 0px
+
+.menu_top_small__wrap
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: minmax(100px, 300px) minmax(200px, 300px) 1fr 1fr
+	grid-column-gap: 20px
+
+
+.menu_top_small__logo
+	display: grid
+	grid-auto-flow: column
+	align-items: center
+
+	a
+		display: grid
+
+.menu_top_small__links
+	grid-auto-flow: column
+	//font-weight: bold
+	font-size: 20px
+	justify-items: end
+
+	li
+		transition: color 0.5s ease
+
+	li:hover
+		color: $green
+
+	.active
+		color: $green
+
+.menu_top_small__humburger
+	cursor: pointer
+	top: 1px
+	justify-self: end
+
+.hamburger
+	display: grid
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+	height: 2px

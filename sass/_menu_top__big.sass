@@ -1,0 +1,54 @@
+#menu_top_big
+	background: $white
+	z-index: 99999
+
+.menu_top_big__wrap
+	grid-auto-flow: column
+	align-items: center
+	display: grid
+	grid-column-gap: 30px
+
+.menu_top_big__logo
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: minmax(200px, 300px)
+	align-items: center
+	justify-content: center
+
+	a
+		display: grid
+
+.menu_top_big__navbar
+	display: grid
+	grid-template-columns: minmax(420px, 1fr)
+
+.menu_top_big__links
+	display: grid
+	grid-auto-flow: column
+	font-size: 1rem
+	text-transform: uppercase
+	justify-content: space-between
+	grid-auto-columns: max-content
+
+	li
+		transition: color 0.5s ease
+
+	li:hover
+		color: $green
+
+	.active
+		color: $green
+
+.menu_scroll
+	width: 100%
+	top: 0
+	left: 0
+	transition: all 0.5s ease
+	position: fixed
+	z-index: 99
+	padding: 10px 0
+
+.menu_scroll__background
+	background: $white
+	box-shadow: 0 0 7px lighten($black, 60%)
+	transition: all 0.5s ease

@@ -1,0 +1,95 @@
+@import vars
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: Roboto-ex, sans-serif
+	overflow-x: hidden
+	opacity: 1
+
+.grid
+	display: grid
+
+.wrap
+	display: grid
+	grid-template-columns: minmax(310px, 1170px)
+	justify-content: center
+	padding: 0 10px
+
+img
+	width: 100%
+	height: auto
+
+h1
+	font-size: $fontsize
+
+h2
+	font-size: $fontsize - 0.3rem
+
+h3
+	font-size: $fontsize - 0.6rem
+
+h4
+	font-size: $fontsize - 0.9rem
+
+h5
+	font-size: $fontsize - 1.1rem
+
+h6
+	font-size: $fontsize - 1.4rem
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+	font-weight: normal
+
+ul
+	margin: 0
+	padding: 0
+
+	li
+		list-style: none
+
+a
+	color: $black
+	text-decoration: none
+	display: grid
+
+p
+	font-size: 1.5rem
+	margin-bottom: 20px
+
+.blue
+	background: $blue
+
+.violet
+	background: $violet
+
+.red
+	background: lighten($red, 9%)
+
+.btn
+	padding: 20px 0
+	text-align: center
+	border-radius: 5px
+	color: $white
+	font-size: 1.7rem
+	transition: all 0.5s ease
+
+.red:hover
+	background: lighten($red, 5%)
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+
+.blue:hover
+	background: lighten($blue, 5%)
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+
+.violet:hover
+	background: lighten($violet, 5%)
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+
+input[type="submit"]:hover
+	background: lighten($red, 5%) !important
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)

@@ -1,0 +1,303 @@
+.menu_top_big__donate
+	display: grid
+	align-content: center
+
+.btn_donate
+	background: $red
+	color: $white
+	padding: 7px 5px
+	text-align: center
+	border-radius: 5px
+	text-transform: uppercase
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)
+	transition: all 0.5s ease
+
+	&:hover
+		background: lighten($red, 5%)
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+
+.menu_top_big__lang
+	display: grid
+	grid-auto-flow: column
+	justify-content: end
+	align-content: center
+	grid-column-gap: 5px
+
+.active_lang
+	color: $blue
+	font-weight: bold
+
+.content_video
+	overflow: hidden
+	position: relative
+	display: grid
+	padding-bottom: 150px
+
+.menu_top_big__hr
+	width: 1px
+	height: 100%
+	background: lighten($black, 80%)
+	transform: rotate(10deg)
+	align-self: center
+
+.content_video__background
+	position: absolute
+	width: 165%
+	left: -34%
+	top: 6%
+
+.content_video__wrap
+	display: grid
+	margin-top: 62px
+	z-index: 999
+	grid-auto-rows: min-content
+	grid-auto-columns: minmax(200px, 1100px)
+	justify-self: center
+
+	.mejs__controls:not([style*='display: none'])
+		background: none
+
+	.mejs__fullscreen-button > button
+		right: 0
+
+video
+	position: absolute
+	width: 100%
+	height: 100%
+
+.mejs__poster
+	height: auto !important
+
+.mejs__container
+	background: none
+	width: 100%
+	height: 0 !important
+	position: relative
+	padding-bottom: 56%
+
+.content_video__player
+	display: grid
+	//grid-template-columns: minmax(100px, 600px)
+	//justify-content: center
+
+// START CONTENT_IMG
+.content_img
+	max-height: 400px
+	overflow: hidden
+
+	img
+		margin-top: -6%
+
+// END CONTENT_IMG
+
+//START CONTENT_ROBIK
+.content_robik
+	height: 500px
+	overflow: hidden
+
+.content_robik__wrap
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: 2fr 1.2fr
+	grid-column-gap: 100px
+	padding-top: 3%
+
+.content_robik__text
+	//margin-top: 5%
+	margin-left: 20%
+	span
+		font-size: 1.3rem
+	span:nth-of-type(3)
+		color: $red
+		font-size: 1.5rem
+		font-weight: bold
+
+//END CONTENT_ROBIK
+
+// START CONTENT_BLUEBOX
+.content_bluebox
+	background: $blue
+	padding: 10px 0 100px 0
+
+.content_bluebox__img
+	display: grid
+	grid-auto-columns: minmax(300px, 510px)
+	justify-content: center
+	padding-bottom: 50px
+
+	img
+		border-radius: 5px
+
+.content_bluebox__text
+	color: $white
+	font-size: 1.5rem
+	padding-bottom: 50px
+
+.content_bluebox__inner__video
+	display: grid
+	grid-auto-columns: minmax(300px, 760px)
+	justify-content: center
+	grid-row-gap: 50px
+
+.content_bluebox__video__text
+	color: $white
+	font-size: 1.5rem
+	text-align: center
+
+// END CONTENT_BLUEBOX
+
+// START CONTENT_EPISODES
+.content_episodes
+	background: url("../img/001_lab.jpg")
+	background-position: center
+	background-size: cover
+	padding: 200px 0
+
+.content_episodes_wrap
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: 2fr minmax(200px, 400px)
+	grid-column-gap: 50px
+
+.h3_blue
+	color: darken($blue, 10%)
+	font-size: 2rem
+	font-weight: bold
+
+// END CONTENT_EPISODES
+
+// START CONTENT_MOSES
+.content_moses
+	background: lighten($red, 9%)
+	padding: 50px 0
+
+.content_moses__wrap
+	display: grid
+	grid-auto-flow: column
+	grid-auto-columns: 1fr 0.9fr
+	color: $white
+	grid-column-gap: 50px
+	align-items: center
+
+.content_moses__img
+	img
+		border-radius: 100%
+		border: 5px solid $white
+
+.content_moses__text
+	display: grid
+
+// END CONTENT_MOSES
+
+// START CONTENT_BIBLE
+.content_bible
+	background: url("../img/bible_bg.jpg")
+	background-position: center
+	background-size: cover
+	padding: 200px 0
+
+// END CONTENT_BIBLE
+
+//START CONTENT_CHRISTMAS
+.content_christmas
+	background: $green
+	padding: 50px 0
+
+//END CONTENT_CHRISTMAS
+
+//START CONTENT_SIGNPOSTS
+.content_signposts
+	background: url("../img/jesus_bg.jpg")
+	background-position: center
+	background-size: cover
+	padding: 200px 0
+
+//END CONTENT_SIGNPOSTS
+
+//START CONTENT_CHILDREN
+.content_children
+	background: darken($blue, 25%)
+	padding: 50px 0
+
+//END CONTENT_CHILDREN
+
+//START CONTENT_MUSIC
+.content_music
+	background: url("../img/music_bg.jpg")
+	background-position: center
+	background-size: cover
+	padding: 200px 0
+
+//END CONTENT_MUSIC
+
+// START CONTENT_MUSIC
+.content_list
+	padding: 50px 0
+
+.content_list__wrap
+	display: grid
+
+	h2
+		font-size: 1.8rem
+		color: $blue
+
+	.btn
+		justify-self: center
+		padding: 20px 100px
+
+.content_list__ul
+	display: grid
+	font-size: 1.5rem
+	padding: 0px 50px 50px
+	grid-template-columns: min-content 1fr
+	align-items: center
+
+	li
+		position: relative
+
+	.img_li
+		background: url("../img/list_img.svg") no-repeat
+		width: 15px
+		height: 15px
+
+// END CONTENT_MUSIC
+//START SOCIAL
+.social__wrap
+	display: grid
+.social__icon
+	display: grid
+	justify-content: center
+	grid-auto-flow: column
+	grid-column-gap: 20px
+.fab
+	display: grid
+	justify-content: center
+	align-content: center
+	font-size: 1.5rem
+	width: 30px
+	height: 30px
+	border: 1px solid $blue
+	color: $blue
+	padding: 10px
+	border-radius: 100%
+	transition: all .5s ease
+	&:hover
+		color: $red
+		border: 1px solid $red
+.social_btn
+	display: grid
+	justify-content: center
+	padding: 0 0 40px
+	.btn
+		padding: 20px
+//END SOCIAL
+//START FOOTER
+.footer
+	background: lighten($black, 20%)
+	color: darken($white, 50%)
+	padding: 20px 0
+
+	span
+		font-size: 0.8rem
+
+//END FOOTER
